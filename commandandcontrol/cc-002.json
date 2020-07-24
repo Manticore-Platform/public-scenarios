@@ -1,0 +1,19 @@
+[
+  {
+    "id": "cc-002",
+    "name": "Use Bitsadmin.exe to download a file from a remote server",
+    "description": "This step downloads a file from a remote web server to the host using bitsadmin.",
+    "tactic": "commandandcontrol",
+    "technique": {
+      "attack_id": "T1105",
+      "name": "Ingress Tool Transfer"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "cmd",
+    "input_argument": "https://live.sysinternals.com/autoruns.exe",
+    "output_argument": "%TEMP%\\autorun.exe",
+    "command": "bitsadmin.exe /transfer /Download /priority Foreground input_argument output_argument",
+    "dependencies": ""
+  }
+]
