@@ -13,7 +13,7 @@
     "interface": "psh",
     "input_argument": "",
     "output_argument": "",
-    "command": ". .\email_collection.ps1; ",
+    "command": ". .\\email_collection.ps1; ",
     "dependencies": "email_collection.ps1"
   }
 ]
