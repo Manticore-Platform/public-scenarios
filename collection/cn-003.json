@@ -13,7 +13,7 @@
     "interface": "psh",
     "input_argument": "",
     "output_argument": "",
-    "command": ". .\psversion.ps1; Invoke-ScreenCapture; Start-Sleep -Seconds 3; View-Job -JobName \"Screenshot\";",
+    "command": ". .\\psversion.ps1; Invoke-ScreenCapture; Start-Sleep -Seconds 3; View-Job -JobName \"Screenshot\";",
     "dependencies": "psversion.ps1"
   }
 ]
