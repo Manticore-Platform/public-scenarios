@@ -1,0 +1,19 @@
+[
+  {
+    "id": "cn-004",
+    "name": "Collect E-mails",
+    "description": "Perform e-mail collection from custom PowerShell module.",
+    "tactic": "collection",
+    "technique": {
+      "attack_id": "T1114",
+      "name": "Email collection"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": ". .\email_collection.ps1; ",
+    "dependencies": "email_collection.ps1"
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "cn-005",
+    "name": "Automated Collection (T1119) - Clipboard (T1115)",
+    "description": "Get contents of clipboard",
+    "tactic": "collection",
+    "technique": {
+      "attack_id": "T1115",
+      "name": "Clipboard Data"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "$clip_data=get-clipboard; write-host $clip_data;",
+    "dependencies": ""
+  }
+]

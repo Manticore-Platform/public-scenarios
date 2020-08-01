@@ -1,0 +1,19 @@
+[
+  {
+    "id": "cn-003",
+    "name": "Screen Capturing",
+    "description": "Load custom PowerShell module and take screenshots.",
+    "tactic": "collection",
+    "technique": {
+      "attack_id": "T1113",
+      "name": "Screen Capture"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": ". .\psversion.ps1; Invoke-ScreenCapture; Start-Sleep -Seconds 3; View-Job -JobName \"Screenshot\";",
+    "dependencies": "psversion.ps1"
+  }
+]

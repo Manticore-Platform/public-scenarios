@@ -1,0 +1,19 @@
+[
+  {
+    "id": "cn-001",
+    "name": "Screen Capture (T1113)",
+    "description": "Native API call(s) were used to collect a screenshot.",
+    "tactic": "collection",
+    "technique": {
+      "attack_id": "T1113",
+      "name": "Screen Capture"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "Import-Module .\Get-Screenshot.ps1 -Verbose -Force; Get-Screenshot;",
+    "dependencies": "Get-Screenshot.ps1"
+  }
+]
