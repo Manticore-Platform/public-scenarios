@@ -13,7 +13,7 @@
     "interface": "psh",
     "input_argument": "",
     "output_argument": "",
-    "command": "Import-Module .\Get-Screenshot.ps1 -Verbose -Force; Get-Screenshot;",
+    "command": "Import-Module .\\Get-Screenshot.ps1 -Verbose -Force; Get-Screenshot;",
     "dependencies": "Get-Screenshot.ps1"
   }
 ]
