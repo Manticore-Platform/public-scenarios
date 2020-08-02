@@ -1,0 +1,19 @@
+[
+  {
+    "id": "de-002",
+    "name": "Timestomp kxwn.lock",
+    "description": "Timestomp kxwn.lock",
+    "tactic": "defense-evasion",
+    "technique": {
+      "attack_id": "T1099",
+      "name": "Timestomp"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "if (!(test-path -path \"$env:appdata\\Microsoft\\kxwn.lock\")) {\r\n            write-host \"[!] kxwn.lock was not found on this host.\";\r\n            exit 1;\r\n          } else {\r\n            . .\\timestomp.ps1;\r\n            timestomp -dest \"$env:appdata\\Microsoft\\kxwn.lock\";\r\n          }",
+    "dependencies": "timestomp.ps1"
+  }
+]

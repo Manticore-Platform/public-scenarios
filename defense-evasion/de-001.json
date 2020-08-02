@@ -1,0 +1,19 @@
+[
+  {
+    "id": "de-001",
+    "name": "UAC Bypass via sdctl",
+    "description": "Invoke UAC bypass sdctl",
+    "tactic": "defense-evasion",
+    "technique": {
+      "attack_id": "T1088",
+      "name": "Access Token Manipulation (T1134)"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": ". .\\stepFourteen_bypassUAC.ps1; bypass;",
+    "dependencies": "stepFourteen_bypassUAC.ps1"
+  }
+]

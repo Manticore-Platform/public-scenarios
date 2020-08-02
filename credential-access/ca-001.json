@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ca-001",
+    "name": "Download Mimikatz Binary",
+    "description": "Staging Mimikatz Binary for later execution",
+    "tactic": "credential-access",
+    "technique": {
+      "attack_id": "T1003",
+      "name": "Credential Dumping"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "cmd",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "write-host \"[+] Successfully downloaded m.exe\";",
+    "dependencies": "m.exe"
+  }
+]

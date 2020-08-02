@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ca-002",
+    "name": "Credential Dumping (T1003)",
+    "description": "Dumping credentials via wmidump (Mimikatz)",
+    "tactic": "credential-access",
+    "technique": {
+      "attack_id": "T1003",
+      "name": "Credential Dumping"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": ". .\\credDump.ps1;",
+    "dependencies": "credDump.ps1"
+  }
+]

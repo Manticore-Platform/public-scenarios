@@ -1,0 +1,19 @@
+[
+  {
+    "id": "dv-003",
+    "name": "Remote System Discovery (T1018)",
+    "description": "The net utility is executed via cmd to enumerate hosts within the domain.",
+    "tactic": "discovery",
+    "technique": {
+      "attack_id": "T1018",
+      "name": "Remote System Discovery"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "cmd",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "net group \"Domain Computers\" \/domain",
+    "dependencies": ""
+  }
+]

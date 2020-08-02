@@ -1,0 +1,19 @@
+[
+  {
+    "id": "dv-002",
+    "name": "System Service Discovery (T1007)",
+    "description": "The net utility is executed via cmd to enumerate local active services.",
+    "tactic": "discovery",
+    "technique": {
+      "attack_id": "T1007",
+      "name": "System Information Discovery"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "cmd",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "net start",
+    "dependencies": ""
+  }
+]

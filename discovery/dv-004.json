@@ -1,0 +1,19 @@
+[
+  {
+    "id": "dv-004",
+    "name": "Enumerate Domain Controller",
+    "description": "Get domain controller and curret user SID for the domain",
+    "tactic": "discovery",
+    "technique": {
+      "attack_id": "T1018",
+      "name": "Remote System Discovery"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": ". .\\powerview.ps1;\r\n          get-netdomaincontroller;",
+    "dependencies": "powerview.ps1"
+  }
+]

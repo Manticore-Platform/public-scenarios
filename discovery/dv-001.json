@@ -1,0 +1,19 @@
+[
+  {
+    "id": "dv-001",
+    "name": "Enumerate Computer Name",
+    "description": "Triage host for ComputerNameNetBIOS,ComputerNameDnsHostname,ComputerNameDnsDomain,ComputerNameDnsFullyQualified,ComputerNamePhysicalNetBIOS,ComputerNamePhysicalDnsHostname,ComputerNamePhysicalDnsDomain,ComputerNamePhysical,DnsFullyQualifie",
+    "tactic": "discovery",
+    "technique": {
+      "attack_id": "T1082",
+      "name": "System Information Discovery"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": ". .\\stepThirteen.ps1; comp;",
+    "dependencies": "stepThirteen.ps1"
+  }
+]

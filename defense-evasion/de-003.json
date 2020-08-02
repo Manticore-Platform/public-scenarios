@@ -1,0 +1,19 @@
+[
+  {
+    "id": "de-003",
+    "name": "Registry Cleanup for UAC Bypass Technique",
+    "description": "Delete registry entries post-UAC Bypass",
+    "tactic": "defense-evasion",
+    "technique": {
+      "attack_id": "T1112",
+      "name": "Modify Registry"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": "Remove-Item -Path HKCU:\\Software\\Classes\\Folder* -Recurse -Force;\r\n          if (!(test-path -path HKCU:\\Software\\Classes\\Folder)) {\r\n            write-host \"[+] Reg keys removed!\";\r\n           }",
+    "dependencies": ""
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "id": "im-002",
+    "name": "Powershell Ransomware Emulation",
+    "description": "Powershell Ransomware Emulation",
+    "tactic": "impact",
+    "technique": {
+      "attack_id": "T1486",
+      "name": "Data Encrypted For Impact"
+    },
+    "type": "endpoint",
+    "platform": "windows",
+    "interface": "psh",
+    "input_argument": "",
+    "output_argument": "",
+    "command": ". .\\ransomemulation.ps1; Emulation",
+    "dependencies": "ransomemulation.ps1"
+  }
+]
