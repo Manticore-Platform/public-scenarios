@@ -1,8 +1,53 @@
-# public-scenarios
-Public Scenarios
+# Manticore Public Threat Scenarios
 
 
-Command And Control
+## Collection
+
+| Scenario        | Description           | Link  |
+| ------------- |:-------------:| -----:|
+| cn-001.json      | Native API call(s) were used to collect a screenshot. | [cn-001.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/collection/cn-001.json) |
+| cn-002.json      | Execute PowerShell from cmd.exe to collect and compress files of specific extensions. | [cn-002.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/collection/cn-002.json) |
+| cn-003.json      | Load custom PowerShell module and take screenshots. | [cn-003.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/collection/cn-003.json) |
+| cn-004.json      | Perform e-mail collection from custom PowerShell module. | [cn-004.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/collection/cn-004.json) |
+| cn-005.json      | Get contents of clipboard. | [cn-005.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/collection/cn-005.json) |
+
+## Credential Access
+
+| Scenario        | Description           | Link  |
+| ------------- |:-------------:| -----:|
+| ca-001.json      | Download Mimikatz Binary | [ca-001.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/credential-access/ca-001.json) |
+| ca-002.json      | Dumping credentials via wmidump (Mimikatz) | [cn-002.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/credential-access/ca-002.json) |
+| ca-003.json      | Mimikatz lsadump::sam is executed via Invoke-Mimikatz to dump hashes via process injection into LSASS. | [ca-003.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/credential-access/ca-003.json) |
+
+
+## Defense Evasion
+
+| Scenario        | Description           | Link  |
+| ------------- |:-------------:| -----:|
+| de-001.json      | Invoke UAC bypass sdctl | [de-001.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/defense-evasion/de-001.json) |
+| de-002.json      | Timestomp kxwn.lock | [de-002.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/defense-evasion/de-002.json) |
+| de-003.json      | Delete registry entries post-UAC Bypass | [de-003.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/defense-evasion/de-003.json) |
+
+
+## Discovery 
+
+| Scenario        | Description           | Link  |
+| ------------- |:-------------:| -----:|
+| dv-001.json      | Triage host for information | [dv-001.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/discovery/dv-001.json) |
+| dv-002.json      | The net utility is executed via cmd to enumerate hosts within the domain. | [dv-002.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/discovery/dv-002.json) |
+| dv-003.json      | Delete registry entries post-UAC Bypass | [dv-003.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/discovery/dv-003.json) |
+| dv-004.json      | Get domain controller and curret user SID for the domain | [dv-004.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/discovery/dv-004.json) |
+
+
+## Impact
+
+| Scenario        | Description           | Link  |
+| ------------- |:-------------:| -----:|
+| im-001.json      | Go Multiplatform Ransomware Emulation | [im-001.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/impact/im-001.json) |
+| im-002.json      | Powershell Ransomware Emulation      |   [im-002.json](https://github.com/Manticore-Platform/public-scenarios/blob/master/impact/im-002.json) |
+
+
+## Command And Control
 
 | Scenario        | Description           | Link  |
 | ------------- |:-------------:| -----:|
