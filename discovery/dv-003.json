@@ -13,7 +13,7 @@
     "interface": "cmd",
     "input_argument": "",
     "output_argument": "",
-    "command": "net group \"Domain Computers\" \/domain",
+    "command": "net group \"Domain Computers\" /domain",
     "dependencies": ""
   }
 ]
