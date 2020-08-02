@@ -10,7 +10,7 @@
     },
     "type": "endpoint",
     "platform": "windows",
-    "interface": "cmd",
+    "interface": "psh",
     "input_argument": "",
     "output_argument": "",
     "command": "write-host \"[+] Successfully downloaded m.exe\";",
